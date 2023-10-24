@@ -16,7 +16,7 @@ struct Time {
     struct Jogador jogadores[11];
 };
 
-// calcular a força de um time
+// calcular a forÃ§a de um time
 double calcularForcaTotal(struct Time time) {
     double forcaTotal = 0;
     for (int i = 0; i < 11; i++) {
@@ -76,7 +76,7 @@ int main() {
     } else if (forcaTime1 < forcaTime2) {
         printf("%s eh mais forte\n", time2.nome);
     } else {
-        printf("Os times têm a forca igual a %.2f\n", forcaTime1);
+        printf("Os times tÃªm a forca igual a %.2f\n", forcaTime1);
     }
 
     return 0;

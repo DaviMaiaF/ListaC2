@@ -3,20 +3,20 @@
 #include <string.h>
 #include <locale.h>
 
-// estrutura jogador
+// Struct de dados jogador
 struct Jogador {
     char nome[30];
     char posicao;
     double forca;
 };
 
-// estrutura time
+// Struct de dados time
 struct Time {
     char nome[30];
     struct Jogador jogadores[11];
 };
 
-// calcular a força de um time
+// calcular a forÃ§a do time
 double calcularForcaTotal(struct Time time) {
     double forcaTotal = 0;
     for (int i = 0; i < 11; i++) {
@@ -76,7 +76,7 @@ int main() {
     } else if (forcaTime1 < forcaTime2) {
         printf("%s eh mais forte\n", time2.nome);
     } else {
-        printf("Os times têm a forca igual a %.2f\n", forcaTime1);
+        printf("Os times tÃªm a forca igual a %.2f\n", forcaTime1);
     }
 
     return 0;

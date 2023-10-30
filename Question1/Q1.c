@@ -19,16 +19,15 @@ int main() {
     }
     printf("\n");
 
-    // Realizar a conta até restar um número
+    // Realizar a conta atÃ© restar um nÃºmero
     while (tamanhoConjunto > 1) {
         for (int i = 0; i < tamanhoConjunto - 1; i++) {
             novoConjunto[i] = valores[i] + valores[i + 1];
         }
-
-        // Reajustar o tamanho do conjunto
+        
         tamanhoConjunto--;
 
-        // Imprimir novo conjunto
+        // PrÃ³ximo conjunto
         for (int i = 0; i < tamanhoConjunto; i++) {
             printf("%d", novoConjunto[i]);
             if (i < tamanhoConjunto - 1) {
@@ -37,7 +36,7 @@ int main() {
         }
         printf("\n");
 
-        // Copiar o novo conjunto de volta para o conjunto original
+        // Copiar o novo conjunto e retornar para o conjunto original
         for (int i = 0; i < tamanhoConjunto; i++) {
             valores[i] = novoConjunto[i];
         }
@@ -45,4 +44,3 @@ int main() {
 
     return 0;
 }
-

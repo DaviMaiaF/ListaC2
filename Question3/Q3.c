@@ -30,8 +30,10 @@ void multMatrizes(int matriz1[4][4], int matriz2[4][4], int resultado[4][4]) {
 
 void saidaMatriz(int matriz[4][4]) {
     for (int i = 0; i < 4; i++) {
-        for (int j = 0; j < 4; j++) {
-            printf("%d ", matriz[i][j]);
+        printf(" "); // Adiciona um espaÃ§o na primeira coluna
+        printf("%*d", 3, matriz[i][0]); 
+        for (int j = 1; j < 4; j++) {
+            printf("%4d", matriz[i][j]); // Elementos com espaÃ§amento de 4
         }
         printf("\n");
     }
@@ -64,7 +66,7 @@ int main() {
     } else if (strcmp(conta, "mult") == 0) {
         multMatrizes(matriz1, matriz2, resultado);
     } else {
-        printf("Operação inválida.\n");
+        printf("OperaÃ§Ã£o invÃ¡lida.\n");
         return 1;
     }
 

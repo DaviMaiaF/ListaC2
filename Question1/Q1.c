@@ -5,7 +5,6 @@ int main() {
     int novoConjunto[10];
     int tamanhoConjunto = 10;
 
-
     for (int i = 0; i < tamanhoConjunto; i++) {
         scanf("%d", &valores[i]);
     }
